@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       #resources gör det möjligt att samla de önskvärda actions 
-      resources :coffe, only: [:index, :create, :destroy, :update]
+      resources :coffe, only: [:index, :create, :destroy, :update, :show]
     end
   end
   
