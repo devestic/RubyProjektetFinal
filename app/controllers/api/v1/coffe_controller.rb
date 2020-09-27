@@ -5,8 +5,8 @@ module Api
   #INDEX
   def index
     #Hämtar allt som finns tillgängligt samt sorterar
-    coffe   = Coffe.order('created_at ASC')
-    render json: {status: 'SUCCESS', message: 'Shows every coffe article in ascending order', data:coffe}, status: :ok
+    coffe   = Coffe.order('created_at DESC')
+    render json: {status: 'SUCCESS', message: 'Shows every coffe article in descending order', data:coffe}, status: :ok
   end
 
   #SHOW
